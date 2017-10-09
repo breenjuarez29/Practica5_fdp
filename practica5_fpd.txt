@@ -1,0 +1,28 @@
+INICIO
+	numero [0]:ENTERO
+	numero [1]:ENTERO
+	numero [2]:ENTERO
+	numero [3]:ENTERO
+
+		ESCRIBIR:"Ingresar el número a incrementar"
+		LEER: numero ingresado
+
+			SI numero [2]=9 ENTONCES
+				INCREMENTAR [2],[1]
+			FIN SI
+
+			SI numero [1]=9 ENTONCES
+				INCREMENTAR [1],[0]
+			FIN SI
+
+			SI numero [0]=9 ENTONCES
+				INCREMENTAR [0]
+				ESCRIBIR 1 en [3]
+			FIN SI
+			DE LO CONTRARIO
+				COPIAR [0],[1]
+				INCREMENTAR[2]
+		ESCRIBIR: "El resultado del incremento es"
+		IMPRIMIR [3][0][1][2]
+FIN
+	
